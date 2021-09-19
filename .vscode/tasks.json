@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "problemMatcher": ["$esbuild-watch"],
+      "label": "npm: watch",
+      "isBackground": true,
+      "detail": "node esbuild --watch"
+    },
+    {
+      "type": "npm",
+      "script": "serve",
+      "problemMatcher": [],
+      "dependsOn": ["npm: watch"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "label": "npm: serve",
+      "detail": "browser-sync start --serveStatic dist --port 8082"
+    }
+  ]
+}
