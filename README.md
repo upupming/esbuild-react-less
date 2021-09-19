@@ -1,6 +1,6 @@
 # esbuild-react-less
 
-A super simple and fast template using esbuild to build a single page React app with support for Less.
+A super simple and fast template using esbuild to build a single page React app with support for Less. Thanks to esbuild, it takes only ~100ms to build the project.
 
 ## Motivation
 
